@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "twcss-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/twcss/TwcssWebPart.js",
+          "manifest": "./src/webparts/twcss/TwcssWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "TwcssWebPartStrings": "lib/webparts/twcss/loc/{locale}.js"
+  }
+}
