@@ -40,4 +40,10 @@ const tailwindcss = build.subTask(
   }
 );
 build.rig.addPreBuildTask(tailwindcss);
+/* fast-serve */
+const { addFastServe } = require("spfx-fast-serve-helpers");
+addFastServe(build);
+/* end of fast-serve */
+
 build.initialize(require('gulp'));
+
